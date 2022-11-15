@@ -315,8 +315,8 @@ def translate(input_sentence, model):
 # # 正式使用
 import sys
 if __name__ == "__main__":
-    if len(sys.argv)>1:
-        input_sentence = sys.argv[1]
-        translate(input_sentence.lower(),transformer)
-    else:
-        print('参数不足')
+    input_sentence = input("请输入葡萄牙语：")
+    try:
+        translate(input_sentence.lower(), transformer)
+    except:
+        print('cuowu')
