@@ -313,5 +313,10 @@ def translate(input_sentence, model):
     print("Predicted translation: {}".format(predicted_sentence))
 
 # # 正式使用
-input_sentence = 'Eu acho que posso voar.'
-translate(input_sentence.lower(),transformer)
+import sys
+if __name__ == "__main__":
+    if len(sys.argv)>1:
+        input_sentence = sys.argv[1]
+        translate(input_sentence.lower(),transformer)
+    else:
+        print('参数不足')
