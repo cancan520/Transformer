@@ -316,6 +316,7 @@ def translate(input_sentence, model):
     predicted_sentence = en_tokenizer.decode([i for i in result if i < en_tokenizer.vocab_size])
     print("Input: {}".format(input_sentence))
     print("Predicted translation: {}".format(predicted_sentence))
+    return predicted_sentence
 
 # # 正式使用
 import sys

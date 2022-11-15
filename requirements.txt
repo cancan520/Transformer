@@ -1,3 +1,4 @@
 tensorflow-gpu==2.10.0
 numpy==1.21.5
 tensorflow-datasets==4.7.0
+flask==1.1.2
