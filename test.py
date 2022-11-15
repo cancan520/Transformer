@@ -1,6 +1,9 @@
 # %matplotlib inline
 import os
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+import logging
+logging.getLogger('tensorflow').disabled = True
+
 import numpy as np
 import tensorflow as tf
 
@@ -317,8 +320,6 @@ def translate(input_sentence, model):
 # # 正式使用
 import sys
 if __name__ == "__main__":
-    input_sentence = input("请输入葡萄牙语：")
-    try:
+    while(True):
+        input_sentence = input("请输入葡萄牙语：")
         translate(input_sentence.lower(), transformer)
-    except:
-        print('cuowu')
