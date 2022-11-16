@@ -8,8 +8,4 @@
 
 4、目录checkpoint：模型训练时产生的checkpoint，保存模型的训练参数、optimizer，供模型断点续训、模型测试时使用
 
-5、课件：Transformer知识要点的整理，B站讲解视频中的课件
-
-
-
 觉得有帮助的话，给个star鼓励一下吧~~ 期待您的关注
